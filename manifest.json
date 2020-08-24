@@ -1,0 +1,24 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/promise/promise.js",
+		"libs/bin/jszip/jszip.js",
+		"libs/bin/md5/md5.js",
+		"libs/bin/mobile-detect/mobile-detect.js",
+		"protobuf-login/library/protobuf-library.js",
+		"protobuf-login/bundles/protobuf-bundles.js",
+		"lib-login/login.js"
+	],
+	"game": [
+		"bin-debug/MainAfterLogin.js",
+		"bin-debug/com/breeze/game/EntryAfterLogin.js",
+		"bin-debug/com/breeze/game/datas/DataManager.js",
+		"bin-debug/com/breeze/game/datas/configs/ItemConfigCfg.js"
+	]
+}
