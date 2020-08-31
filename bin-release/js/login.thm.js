@@ -240,21 +240,21 @@
 	__extends(LoginViewSkin, _super);
 	function LoginViewSkin() {
 		_super.call(this);
-		this.skinParts = ["labContent","btnClose","btnReturn"];
+		this.skinParts = ["btnClose","btnReturn","labContent"];
 		
 		this.height = 858.73;
-		this.elementsContent = [this._Group3_i()];
+		this.elementsContent = [this._Group2_i()];
 	}
 	var _proto = LoginViewSkin.prototype;
 
-	_proto._Group3_i = function () {
+	_proto._Group2_i = function () {
 		var t = new eui.Group();
 		t.anchorOffsetY = 0;
 		t.height = 836;
 		t.horizontalCenter = 0;
 		t.verticalCenter = 0;
 		t.width = 640;
-		t.elementsContent = [this._Group1_i(),this._Image3_i(),this._Label1_i(),this._Scroller1_i(),this.btnClose_i(),this.btnReturn_i()];
+		t.elementsContent = [this._Group1_i(),this._Image3_i(),this.btnClose_i(),this.btnReturn_i(),this._Label1_i(),this.labContent_i()];
 		return t;
 	};
 	_proto._Group1_i = function () {
@@ -299,52 +299,6 @@
 		t.y = 76;
 		return t;
 	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.bold = true;
-		t.fontFamily = "specialGameFont";
-		t.horizontalCenter = 6;
-		t.text = "测试面板";
-		t.textColor = 0x803f07;
-		t.y = 22.56;
-		return t;
-	};
-	_proto._Scroller1_i = function () {
-		var t = new eui.Scroller();
-		t.anchorOffsetX = 0;
-		t.anchorOffsetY = 0;
-		t.height = 667.67;
-		t.horizontalCenter = -2.5;
-		t.width = 548.67;
-		t.y = 75;
-		t.viewport = this._Group2_i();
-		return t;
-	};
-	_proto._Group2_i = function () {
-		var t = new eui.Group();
-		t.layout = this._VerticalLayout1_i();
-		t.elementsContent = [this.labContent_i()];
-		return t;
-	};
-	_proto._VerticalLayout1_i = function () {
-		var t = new eui.VerticalLayout();
-		t.paddingTop = 10;
-		return t;
-	};
-	_proto.labContent_i = function () {
-		var t = new eui.Label();
-		this.labContent = t;
-		t.bold = false;
-		t.fontFamily = "specialGameFont";
-		t.lineSpacing = 5;
-		t.size = 28;
-		t.text = "游戏公告";
-		t.textAlign = "left";
-		t.textColor = 0x803f07;
-		t.width = 554;
-		t.y = 12;
-		return t;
-	};
 	_proto.btnClose_i = function () {
 		var t = new eui.Image();
 		this.btnClose = t;
@@ -361,6 +315,31 @@
 		t.source = "basePanel_json.common_fanhui";
 		t.x = 514.27;
 		t.y = 742.76;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.bold = true;
+		t.fontFamily = "specialGameFont";
+		t.horizontalCenter = 6;
+		t.text = "测试面板";
+		t.textColor = 0x803f07;
+		t.y = 22.56;
+		return t;
+	};
+	_proto.labContent_i = function () {
+		var t = new eui.Label();
+		this.labContent = t;
+		t.bold = false;
+		t.fontFamily = "specialGameFont";
+		t.lineSpacing = 5;
+		t.size = 28;
+		t.text = "游戏测试面板";
+		t.textAlign = "left";
+		t.textColor = 0x803f07;
+		t.width = 554;
+		t.x = 39;
+		t.y = 92;
 		return t;
 	};
 	return LoginViewSkin;
